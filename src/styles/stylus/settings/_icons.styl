@@ -1,0 +1,169 @@
+// BASE
+// =========================================================
+.svg-icon
+  display inline-block
+  width 47px
+  height 47px
+  color: currentColor
+  vertical-align middle
+  fill none
+  stroke currentColor
+.svg-fill
+  fill currentColor
+  stroke none
+.svg-up
+  /* default */
+  transform rotate(0deg)
+.svg-right
+  transform rotate(90deg)
+.svg-down
+  transform rotate(180deg)
+.svg-left
+  transform rotate(-90deg)
+
+// ICONS
+.a-icon
+  width 24px
+  height 24px
+  display inline-block
+  background-position center
+  background-repeat no-repeat
+  &__user
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M0 10.818V.06h13.876v10.758z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M4.664 3.011c.451-1.09 1.587-1.47 2.423-1.465 1.057.007 1.894.533 2.24 1.407.23.58.314 1.21.219 1.642-.143.65-.484 1.113-1.218 1.655l-.04.029c-.633.442-1.498.472-2.249.142a2.679 2.679 0 0 1-.858-.602c-.81-.848-.97-1.714-.517-2.808m4.574 4.517l.077-.054c.736-.544 1.527-1.273 1.81-2.56.228-1.033-.125-2.1-.288-2.51A3.712 3.712 0 0 0 8.85.364 4.421 4.421 0 0 0 7.1 0C5.327-.012 3.782.946 3.163 2.442c-.681 1.646-.403 3.134.826 4.42 1.39 1.457 3.697 1.75 5.25.666' fill='%23FFF'/%3E%3Cg transform='translate(0 9.09)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath d='M12.141 7.87a.583.583 0 0 1-.113.277c-.42.575-1.863.836-2.406.934-.863.156-1.747.2-2.624.132l-.106-.008c-1.174-.092-2.388-.188-3.479-.47-1.09-.28-1.607-.626-1.688-.79-.071-.142.003-.416.082-.706.046-.17.094-.346.125-.535.043-.264.089-.366.151-.509a3.24 3.24 0 0 0 .258-.85c.118-.681.336-1.31.648-1.868l.113-.205c.284-.517.551-1.005.967-1.225.357-.19.846-.232 1.364-.277.144-.012.288-.025.43-.04.456-.05.883-.095 1.288-.095.43 0 .838.052 1.232.207 1.155.456 2.428 1.032 2.915 2.099.714 1.568.99 2.853.843 3.93m.72-4.542c-.698-1.532-2.245-2.316-3.813-2.935C7.868-.07 6.748.05 5.666.167c-.128.014-.259.025-.39.036-.644.056-1.374.119-2.05.478-.855.454-1.288 1.243-1.636 1.878l-.107.194a7.375 7.375 0 0 0-.818 2.341c-.045.262-.09.364-.153.507-.082.186-.184.418-.258.867-.018.114-.054.246-.092.387-.127.466-.3 1.104.023 1.751.353.708 1.286 1.261 2.773 1.645 1.244.322 2.539.424 3.791.522l.106.008a12.062 12.062 0 0 0 3.093-.155c1.32-.24 2.767-.616 3.484-1.594.213-.292.346-.616.393-.965.185-1.358-.13-2.908-.964-4.738' fill='%23FFF' mask='url(%23b)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    &-blue
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M0 10.818V.06h13.876v10.758z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M4.664 3.011c.451-1.09 1.587-1.47 2.423-1.465 1.057.007 1.894.533 2.24 1.407.23.58.314 1.21.219 1.642-.143.65-.484 1.113-1.218 1.655l-.04.029c-.633.442-1.498.472-2.249.142a2.679 2.679 0 0 1-.858-.602c-.81-.848-.97-1.714-.517-2.808m4.574 4.517l.077-.054c.736-.544 1.527-1.273 1.81-2.56.228-1.033-.125-2.1-.288-2.51A3.712 3.712 0 0 0 8.85.364 4.421 4.421 0 0 0 7.1 0C5.327-.012 3.782.946 3.163 2.442c-.681 1.646-.403 3.134.826 4.42 1.39 1.457 3.697 1.75 5.25.666' fill='%234D4DFF'/%3E%3Cg transform='translate(0 9.09)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath d='M12.141 7.87a.583.583 0 0 1-.113.277c-.42.575-1.863.836-2.406.934-.863.156-1.747.2-2.624.132l-.106-.008c-1.174-.092-2.388-.188-3.479-.47-1.09-.28-1.607-.626-1.688-.79-.071-.142.003-.416.082-.706.046-.17.094-.346.125-.535.043-.264.089-.366.151-.509a3.24 3.24 0 0 0 .258-.85c.118-.681.336-1.31.648-1.868l.113-.205c.284-.517.551-1.005.967-1.225.357-.19.846-.232 1.364-.277.144-.012.288-.025.43-.04.456-.05.883-.095 1.288-.095.43 0 .838.052 1.232.207 1.155.456 2.428 1.032 2.915 2.099.714 1.568.99 2.853.843 3.93m.72-4.542c-.698-1.532-2.245-2.316-3.813-2.935C7.868-.07 6.748.05 5.666.167c-.128.014-.259.025-.39.036-.644.056-1.374.119-2.05.478-.855.454-1.288 1.243-1.636 1.878l-.107.194a7.375 7.375 0 0 0-.818 2.341c-.045.262-.09.364-.153.507-.082.186-.184.418-.258.867-.018.114-.054.246-.092.387-.127.466-.3 1.104.023 1.751.353.708 1.286 1.261 2.773 1.645 1.244.322 2.539.424 3.791.522l.106.008a12.062 12.062 0 0 0 3.093-.155c1.32-.24 2.767-.616 3.484-1.594.213-.292.346-.616.393-.965.185-1.358-.13-2.908-.964-4.738' fill='%234D4DFF' mask='url(%23b)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+      &--fill
+        background-image: url('../../assets/img/icons/brand/NG_ACCOUNT_FILLED.svg')
+  &__dropdown
+      background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 10'%3E%3Cpolygon fill='%234d4dff' points='16.52 1.52 15.46 0.46 8.5 7.42 1.54 0.46 0.48 1.52 8.5 9.54 16.52 1.52'/%3E%3C/svg%3E")
+      &.next
+        -webkit-transform: rotate(-90deg)
+        -moz-transform: rotate(-90deg)
+        -ms-transform: rotate(-90deg)
+        -o-transform: rotate(-90deg)
+        transform: rotate(-90deg)
+      &.prev
+        -webkit-transform: rotate(90deg)
+        -moz-transform: rotate(90deg)
+        -ms-transform: rotate(90deg)
+        -o-transform: rotate(90deg)
+        transform: rotate(90deg)
+  &__checkbox
+    width 18px
+    height 18px
+    margin auto
+    border-radius 2px
+    background-color #ffffff
+    &-off
+      border 1px solid var(--grey_2)
+      &.readonly
+        width: 20px
+        height: 20px
+        border none
+    &-on
+      background-image: url('../../assets/img/icons/ui/NG_CHECKBOX_TICK.svg')
+      border 1px solid var(--charcoal)
+      &.readonly
+        width: 20px
+        height: 20px
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 16'%3E%3Cpath fill='%234d4dff' d='M7.26 15.98L21.81 1.43 20.39.02 7.26 13.15 1.6 7.5.19 8.91l7.07 7.07z'/%3E%3C/svg%3E")
+        border none
+    &.error--text
+      border 1px solid var(--orange)
+
+  &__radio
+    width 20px
+    height 20px
+    margin auto
+    border-radius 50%
+    background-color #ffffff
+    &-off
+      border 1px solid var(--grey_2)
+    &-on
+      border 1px solid var(--charcoal)
+      &:before
+        content ''
+        display block
+        position absolute
+        width 10px
+        height 10px
+        border-radius 50%
+        background-color var(--blue)
+        top 7px
+        left 7px
+    &.error--text
+      border 1px solid var(--orange)
+// ICONS -- hover
+.v-input--checkbox
+  .v-input--selection-controls__input
+    input:hover~.a-icon__checkbox-off:not(.readonly)
+      border 1px solid var(--charcoal)
+.v-radio
+  .v-input--selection-controls__input
+    input:hover~.a-icon__radio-off
+      border 1px solid var(--charcoal)
+  // ============================
+ // to delete late
+.app-social
+  width 35px
+  height 36px
+  background-color #ffffff
+  background-position center
+  background-repeat no-repeat
+  &.facebook
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg aria-hidden='true' data-prefix='fab' data-icon='facebook-f' class='svg-inline--fa fa-facebook-f fa-w-9' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 264 512'%3E%3Cpath fill='%234d4dff' d='M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229'%3E%3C/path%3E%3C/svg%3E")
+    background-size: 30%;
+  &.instagram
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg aria-hidden='true' data-prefix='fab' data-icon='instagram' class='svg-inline--fa fa-instagram fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%234d4dff' d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z'%3E%3C/path%3E%3C/svg%3E")
+    background-size: 55%;
+
+.app-close
+  width 19px
+  height 19px
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:%23FFF;fill-rule:evenodd;}%3C/style%3E%3C/defs%3E%3Ctitle%3EArtboard 1%3C/title%3E%3Cpolygon class='cls-1' points='24.52 1.89 23.11 0.48 12.5 11.09 1.89 0.48 0.48 1.89 11.09 12.5 0.48 23.11 1.89 24.52 12.5 13.91 23.11 24.52 24.52 23.11 13.91 12.5 24.52 1.89'/%3E%3C/svg%3E");
+
+.app-dashboard
+  width 60px
+  height 60px
+  background-position 50%
+  background-repeat no-repeat
+  &.inbox
+    background-image url("../../assets/img/icons/brand/NG_INBOX.svg")
+  &.account
+    background-image url("../../assets/img/icons/brand/NG_MY_ACCOUNT.svg")
+    &-yellow
+      background-image url("../../assets/img/icons/brand/NG_MY_ACCOUNT.svg")
+  &.alerts
+    background-image url("../../assets/img/icons/brand/NG_ALERTS.svg")
+    &-green
+      background-image url("../../assets/img/icons/brand/NG_ALERTS.svg")
+  &.connections
+    background-image url("../../assets/img/icons/brand/NG_CONNECTIONS.svg")
+  &.favourites
+    background-image url("../../assets/img/icons/brand/NG_FAVOURITES.svg")
+  &.favourites-fill
+    &--green
+      background-image url("../../assets/img/icons/brand/NG_FAVOURITES_FILL.svg")
+  &.reviews
+    background-image url("../../assets/img/icons/brand/NG_REVIEWS.svg")
+    &-orange
+      background-image url("../../assets/img/icons/brand/NG_REVIEWS.svg")
+  &.subscription
+    background-image url("../../assets/img/icons/brand/NG_SUBSCRIPTION.svg")
+  &.post_a_job
+    background-image url("../../assets/img/icons/brand/NG_POST_A_JOB.svg")
+  &.crafty
+    &-orange
+      background-image url("../../assets/img/icons/brand/NG_CRAFTY.svg")
+  &.join_network
+    background-image url("../../assets/img/icons/brand/NG_JOIN_NETWORK.svg")
+    &-yellow
+      background-image url("../../assets/img/icons/brand/NG_JOIN_NETWORK.svg")
+  &.engaged
+    background-image url("../../assets/img/icons/brand/NG_ENGAGED.svg")
+    &-green
+      background-image url("../../assets/img/icons/brand/NG_ENGAGED.svg")
+  &.ages-0-1
+    background-image url("../../assets/img/icons/brand/NG_AGES_0-1.svg")
+
+

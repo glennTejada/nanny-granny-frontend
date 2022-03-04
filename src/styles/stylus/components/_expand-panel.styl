@@ -1,0 +1,26 @@
+.app-expansion-panel
+  box-shadow none
+  .v-expansion-panel__container
+    border-color var(--grey_2) !important
+    background-color transparent !important
+    &:last-child
+      border-bottom 1px solid var(--grey_2)
+  .v-expansion-panel__header
+    padding 25px 0
+    font-size 1.1428571428571428rem
+    color var(--black)
+    @media (min-width 600px)
+      padding 42px 0
+    .v-expansion-panel__header__icon
+      display flex
+      .v-icon
+        height 10px
+  .v-expansion-panel__body
+    p
+      margin-bottom 42px
+  &.large
+    .v-expansion-panel__header
+      .v-expansion-panel__header__icon
+        .v-icon
+          @media (min-width 600px)
+            height 14px

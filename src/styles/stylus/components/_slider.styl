@@ -1,0 +1,29 @@
+.v-input--slider
+  .v-input__control
+    .v-slider__track__container
+      .v-slider__track
+        height 1px
+        background var(--grey_2)
+  .v-slider__thumb-container
+    .v-slider__thumb
+      transform translateY(-50%) scale(0.7)
+      &.primary
+        background-color #ffffff !important
+        border 2px solid var(--blue)
+      &:hover
+        border-color var(--blue)
+        background-color var(--blue) !important
+        cursor pointer
+  &:not(.v-input--is-dirty)
+    .v-slider__thumb-container
+      .v-slider__thumb
+        background #fff
+        border 2px solid var(--grey_2)
+        &:hover
+          border 2px solid var(--blue)
+  .v-slider--is-active
+    .v-slider__thumb-container--is-active
+      .v-slider__thumb
+        transform translateY(-50%) scale(0.7)
+        background-color var(--blue) !important
+        border 2px solid var(--blue)

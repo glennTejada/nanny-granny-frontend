@@ -1,0 +1,97 @@
+// Toolbar
+// ============================================================
+.v-toolbar__content
+  height inherit !important
+  .v-badge--overlap .v-badge__badge
+    top 0 !important
+
+.app-drawer-tools
+  .v-list__tile
+    height 55px
+
+.app-drawer-auth
+  height 54px !important
+  .v-list__tile
+    height 100%
+
+// Base
+// ============================================================
+#appContent
+  letter-spacing .3px
+b, strong 
+    font-weight: bold !important
+
+p.content
+  &-base
+    line-height 1.75
+    font-size 1.1428571428571428rem
+    color var(--charcoal)
+
+.coming-soon
+  background-position: 50% 0
+  height 500px
+
+@media (max-width: 600px)
+  html
+    font-size 12px
+
+// Container
+// ============================================================
+@media only screen and (min-width: 1904px)
+  .container
+    max-width 1185px
+
+.theme--light.application
+  background #ffffff
+
+.app-container-content-page
+  max-width 800px !important
+
+// Transition
+// ============================================================
+.app-primary-trans
+  -webkit-transition 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+  transition 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+.none-trans
+  -webkit-transition none !important
+  transition none !important
+
+// Spacing
+// ============================================================
+.app-width-100
+  width 100% !important
+.app-fluid-padding
+  padding 0 24px
+
+.app-divider
+  width 134px
+  height 11px
+  display inline-block
+  background-image url("../../assets/img/icons/patterns/NG_Pattern-08.svg")
+  background-size 160px
+  background-position -24px -3px
+.display-my-page
+  margin-top 60px
+  margin-bottom 60px
+
+.display-with-label
+  position relative
+  &:after
+    content ''
+    display block
+    width 68px
+    height 50px
+    position: absolute
+    right 10px
+    bottom -30px
+    background-repeat  no-repeat
+    transform rotate(19deg)
+
+@media (min-width: 600px)
+  .display-my-page
+    margin-top 125px
+    margin-bottom 125px
+  .display-with-label
+    &:after
+      right -100px

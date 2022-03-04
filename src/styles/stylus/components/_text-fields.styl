@@ -1,0 +1,63 @@
+.v-text-field
+  &--outline > .v-input__control
+    > .v-input__slot
+      background-color #fff !important
+      margin-top 32px
+      min-height 48px
+      border 1px solid var(--grey_2) !important
+      border-radius 2px !important
+
+      &:hover
+        border 1px solid var(--grey_1) !important
+
+      label.v-label
+        max-width 100%
+        color var(--charcoal)
+        font-size 1.1428571428571428rem
+        top -32px
+        left -12px !important
+        -webkit-transform translateY(-6px) scale(1)
+        transform translateY(-6px) scale(1)
+
+        &.primary--text
+          color var(--charcoal) !important
+
+      input
+        color var(--black)
+        margin 0
+        height 100%
+        max-height 100%
+        caret-color var(--charcoal) !important
+
+  &--solo > .v-input__control
+    > .v-input__slot
+      box-shadow none !important
+      border 1px solid var(--grey_2) !important
+      border-radius 2px !important
+      &:hover
+        border 1px solid var(--grey_1) !important
+    > .v-text-field__details
+        display block !important
+  &--solo.v-text-field--small > .v-input__control
+    min-height 34px
+    > .v-input__slot label
+      font-size inherit
+
+  &.v-input--is-focused
+    .v-input
+      &__slot
+        border 1px solid var(--grey_1) !important
+
+  .v-input__append-inner
+    margin-top 11px !important
+
+    .a-icon__dropdown
+      height 10px !important
+
+  .v-text-field__details
+    padding 0 !important
+    margin 0 !important
+
+  &.error--text
+    .v-input__slot
+      border 1px solid var(--orange) !important

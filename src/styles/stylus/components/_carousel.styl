@@ -1,0 +1,19 @@
+.app-carousel
+  &.v-carousel
+    .v-carousel__controls
+      background-color transparent
+      .v-btn
+        &--icon,
+        &--small
+          width 11px
+      .v-btn:before
+        width 11px
+        height 11px
+        background-color #fff
+        border solid 2px var(--blue)
+        top 8px
+        opacity 1
+        z-index 10
+      .v-btn:hover:before,
+      &__item--active.v-btn:before
+        background-color var(--blue)

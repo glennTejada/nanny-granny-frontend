@@ -1,0 +1,20 @@
+:root {
+    --white: #ffffff;
+    --sand: #f6f4eb;
+    --blue: #4d4dff;
+    --blue_hover: #2828d0;
+    --blue_medium: #83d0f5;
+    --blue_light: #d6f4fd;
+    --pink: #fde7e5;
+    --orange: #f56225;
+    --green: #039e8b;
+    --black: #000000;
+    --yellow: #ffc250;
+    --charcoal: #545454;
+    --grey_1: #9b9b9b;
+    --grey_2: #d8d8d8;
+    --grey_3: #ecebeb;
+    --grey_4: rgba(255, 255, 255, 0.4);
+
+    --app-border-radius: 2px;
+}

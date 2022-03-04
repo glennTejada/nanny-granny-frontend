@@ -1,0 +1,45 @@
+.v-autocomplete__content
+  &.__multiple
+    .v-list
+      padding-bottom 6px !important
+    .v-list__tile__action
+      min-width auto
+      .v-input--checkbox .v-input__control
+        .v-input__slot
+          margin 0
+        .v-input--selection-controls__ripple
+          display none
+
+.v-menu__content
+  transform translateY(-2px)
+  &.menuable__content__active
+    border 1px solid var(--grey_1)
+    border-top none !important
+    border-radius 0 0 2px 2px !important
+    webkit-box-shadow: 0 3px 3px 0 var(--grey_3)
+    box-shadow: 0 3px 3px 0 var(--grey_3)
+    .v-select-list.v-card
+      .v-list
+        padding 0
+
+.app-autocomplete
+  &.v-autocomplete
+    .v-input__control
+      background transparent
+    .v-input
+      &__slot
+        padding-right 25px
+        border 1px solid var(--grey_2)
+        min-height 48px
+        .v-progress-linear
+          top calc(100% - 2px)
+        &:hover
+          border 1px solid var(--grey_1) !important
+        input
+          margin auto
+    .v-text-field__details
+      padding 0
+  &.v-input--is-focused
+    .v-input
+      &__slot
+        border 1px solid var(--grey_1) !important

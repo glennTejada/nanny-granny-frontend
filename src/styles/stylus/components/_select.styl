@@ -1,0 +1,28 @@
+.v-select
+
+  &.v-text-field--enclosed:not(.v-text-field--single-line)
+    .v-select__selections
+      padding-top: 0
+
+  &.v-text-field--solo:not(.v-text-field--solo-flat)
+    > .v-input__control
+      > .v-input__slot
+        border 1px solid var(--grey_2)
+        box-shadow none
+        cursor pointer
+        .v-input__append-inner
+          margin-top 0 !important
+
+  .v-select__selections
+    max-width 100%
+
+.v-menu__content
+  .v-list
+    padding-bottom 6px !important
+  .v-list__tile__action
+    min-width auto
+    .v-input--checkbox .v-input__control
+      .v-input__slot
+        margin 0
+      .v-input--selection-controls__ripple
+        display none

@@ -1,0 +1,29 @@
+.app-pagination
+  &.v-pagination
+    color var(--blue)
+    .v-pagination__navigation
+      background-color transparent
+      box-shadow none
+      outline-color transparent !important
+      .a-icon__dropdown
+        height 10px
+    .v-pagination__item
+      background-color transparent
+      width 42px
+      height 42px
+      box-shadow none
+      font-size 1rem
+      border-radius 2px
+      border solid 2px var(--blue)
+      color var(--blue)
+      &--active
+        color #fff
+      &:hover
+        color #fff
+        background var(--blue_hover)
+@media (min-width: 600px)
+  .app-pagination
+    &.v-pagination
+      .v-pagination__item
+        width 48px
+        height 48px

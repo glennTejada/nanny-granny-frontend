@@ -1,0 +1,101 @@
+.app-toolbar-container
+  height 56px
+  background-color var(--white)
+  position relative
+  z-index 111
+
+.app-toolbar
+  border-bottom 2px solid var(--grey_2)
+  background-color var(--white) !important
+  height 56px
+  z-index 100
+  &[data-booted="true"]
+    transition .2s ease-in-out
+  .app-toolbar-title
+    cursor pointer
+    .app-toolbar-logo
+      transition .2s ease-in-out
+      width 32px
+      height 34px
+      background url("../../assets/logo/blue-0.5x.svg") no-repeat center
+  .v-btn
+    color: var(--blue)
+    text-transform: unset
+    font-size: 1.2857142857142858rem
+    height: auto !important
+    &:hover
+      color: var(--blue_hover)
+    &:before
+      content: none
+  .app-toolbar-items-auth
+    position relative
+    .v-btn
+      min-width 48px
+      border-radius 0
+      padding 0 10px
+
+  .btn-active-search
+    background-color var(--blue)
+    > .v-btn
+      color var(--white)
+  .v-menu__content
+    background-color var(--white)
+    padding 25px 20px 25px
+    top 110% !important
+    right -54px
+    left auto !important
+    overflow inherit
+    contain layout
+    border: 1px solid var(--grey_1) !important
+    .v-list
+      padding 0 !important
+    &:before
+      content ''
+      position absolute
+      left 60%
+      top -7px
+      background #fff
+      width 13px
+      height 13px
+      border-top 1px solid var(--grey_1)
+      border-right 1px solid var(--grey_1)
+      transform rotateZ(-45deg)
+  &.app-toolbar-min
+    .v-menu__content
+      top 90% !important
+
+@media (min-width: 960px)
+  .app-toolbar-container
+    height 208px
+  .app-toolbar
+    height 208px
+    .v-menu__content
+      top 63% !important
+      right 0
+    &.app-toolbar-min
+      height 81px
+      .v-btn
+        /*font-size 1.1428571428571428rem*/
+      .app-toolbar-title
+        .app-toolbar-logo
+          height 53px
+          background url("../../assets/logo/blue-0.5x.svg") no-repeat 0 50%
+    .v-toolbar__items:not(.app-toolbar-items-auth)
+      .v-btn:after
+        content: ''
+        display: block
+        left 16px
+        right 16px
+        height 2px
+        bottom -2px
+        background-color: currentColor
+        position: absolute
+        transform: scaleX(0)
+        transition .2s ease-in-out
+      .v-btn--active:after, .v-btn:hover:after, .v-btn:focus:after
+        transform: scaleX(1)
+    .app-toolbar-title
+      .app-toolbar-logo
+        width 142px
+        height 144px
+        background url("../../assets/logo/blue-1x.svg") no-repeat 0 50%

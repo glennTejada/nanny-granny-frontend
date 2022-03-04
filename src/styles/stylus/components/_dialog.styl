@@ -1,0 +1,19 @@
+.v-overlay
+  z-index 110
+  &--active
+    &:before
+      background-color rgba(84, 84, 84, 0.8)
+      opacity 1
+    &:after
+      content ''
+      position absolute
+      display: block
+      width: 24px
+      height: 24px
+      top: 24px
+      right: 24px
+      cursor pointer
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25' fill='%23ffffff'%3E%3Cpolygon points='24.52 1.89 23.11 0.48 12.5 11.09 1.89 0.48 0.48 1.89 11.09 12.5 0.48 23.11 1.89 24.52 12.5 13.91 23.11 24.52 24.52 23.11 13.91 12.5 24.52 1.89'/%3E%3C/svg%3E ")
+
+//.v-dialog__content
+//  z-index 996 !important
